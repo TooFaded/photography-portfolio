@@ -1,5 +1,12 @@
+import Layout from "./components/Layout";
+import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
-  return <h1 className="text-blue-500 text-2xl">Hello!</h1>;
+  return (
+    <Router>
+      <Layout></Layout>;
+    </Router>
+  );
 }
 
 export default App;

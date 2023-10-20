@@ -22,7 +22,7 @@ const photos = [
 
 function PhotoGallery() {
   return (
-    <div className="grid grid-cols-3 gap-4 mt-4 mb-4 ml-4 mr-4">
+    <div className="grid grid-cols-3 gap-6 m-6">
       {photos.map((photo, index) => (
         <img
           key={index}

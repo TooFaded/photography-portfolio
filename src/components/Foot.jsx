@@ -5,7 +5,7 @@ import { Footer } from "flowbite-react";
 function Foot() {
   return (
     <footer>
-      <Footer className="bg-blue-300" container>
+      <Footer className="bg-blue-300 shadow-lg" container>
         <Footer.Copyright
           className="text-white"
           by="Reyna Nunez™"

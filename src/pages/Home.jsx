@@ -2,7 +2,7 @@ import PhotoGallery from "../components/PhotoGallery";
 
 function Home() {
   return (
-    <main>
+    <main className="bg-blue-200 p-6">
       <PhotoGallery />
     </main>
   );

@@ -5,13 +5,26 @@ import { Footer } from "flowbite-react";
 function Foot() {
   return (
     <footer>
-      <Footer container>
-        <Footer.Copyright by="Reyna Nunez™" href="#" year={2023} />
+      <Footer className="bg-blue-300" container>
+        <Footer.Copyright
+          className="text-white"
+          by="Reyna Nunez™"
+          href="#"
+          year={2023}
+        />
         <Footer.LinkGroup>
-          <Footer.Link href="#">About</Footer.Link>
-          <Footer.Link href="#">Privacy Policy</Footer.Link>
-          <Footer.Link href="#">Licensing</Footer.Link>
-          <Footer.Link href="#">Contact</Footer.Link>
+          <Footer.Link className="text-white" href="#">
+            About
+          </Footer.Link>
+          <Footer.Link className="text-white" href="#">
+            Privacy Policy
+          </Footer.Link>
+          <Footer.Link className="text-white" href="#">
+            Licensing
+          </Footer.Link>
+          <Footer.Link className="text-white" href="#">
+            Contact
+          </Footer.Link>
         </Footer.LinkGroup>
       </Footer>
     </footer>

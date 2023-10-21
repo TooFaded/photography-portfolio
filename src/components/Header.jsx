@@ -6,9 +6,9 @@ import crownLogo from "../assets/icons8-crown-64.png";
 
 function Header() {
   return (
-    <header>
-      <Navbar className="bg-blue-300 shadow-xl border-b-2" fluid>
-        <Navbar.Brand as={Link} href="/">
+    <header className="sticky top-0 z-10">
+      <Navbar className="bg-blue-300 shadow-lg border-b-2" fluid>
+        <Navbar.Brand as={Link} to="/">
           <span className="self-center whitespace-nowrap text-2xl sm:text-4xl pb-2 pt-2 mr-[-2px] ml-4 drop-shadow-lg  text-white dark:text-white font-sacramento">
             Reyna Nuñez.
             <p className="text-sm font-sans tracking-wider font-light sm:ml-16 ml-6">
@@ -18,6 +18,7 @@ function Header() {
           <img src={crownLogo} alt="Crown Icon" className="w-8 sm:w-14 mb-6" />
         </Navbar.Brand>
         <Navbar.Toggle />
+
         <Navbar.Collapse>
           <Navbar.Link
             className="text-white hover:bg-gray-400 text-lg"

@@ -17,7 +17,7 @@ function Foot() {
           </Footer.Link>
         </Footer.LinkGroup>
         <Footer.Copyright
-          className="text-white"
+          className="text-white text-center"
           by="Reyna Nunez™"
           href="#"
           year={2023}

@@ -1,26 +1,47 @@
 import ReynaAboutPhoto from "../assets/reyna-about-img.jpeg";
+import { useState, useEffect } from "react";
 
 function About() {
+  const [fadeIn, setFadeIn] = useState(false);
+  const [imageMoveIn, setImageMoveIn] = useState(false);
+
+  useEffect(() => {
+    setImageMoveIn(true);
+  }, []);
+
+  useEffect(() => {
+    setFadeIn(true);
+  }, []);
+
   return (
     <div className="container h-full sm:h-screen  mx-auto p-6 mt-8">
       <h1 className="text-3xl mb-4 font-light text-center sm:text-left">
         Reyna Nunez
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="sm:ml-0 ml-20 mb-4">
+        <div
+          className={`sm:ml-0 ml-20 mb-4 text-lg ${
+            imageMoveIn
+              ? "transform translate-x-0 opacity-100 transition-transform duration-1000 ease-out"
+              : "transform -translate-x-full opacity-0"
+          }`}
+        >
           <img
             src={ReynaAboutPhoto}
             alt="Reyna Nunez"
             className="w-[75%] rounded-xl"
           />
         </div>
-        <div>
+        <div
+          className={`text-container ${
+            fadeIn ? "opacity-100" : "opacity-0"
+          } transition-opacity duration-1000 ease-in-out`}
+        >
           <p className="text-lg">
             Reyna Nunez is a talented Mexican American photographer known for
             her breathtaking nature photography. With a passion for capturing
             the beauty of the natural world, Reyna's work is a visual
-            celebration of the diverse landscapes found in Mexico and the United
-            States.
+            celebration of the diverse landscapes found in the United States.
           </p>
           <p className="text-lg mt-4">
             Her keen eye for detail and her ability to play with light and

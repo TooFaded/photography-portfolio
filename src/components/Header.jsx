@@ -25,7 +25,7 @@ function Header() {
             as={Link}
             to="/"
           >
-            <span className="hover:text-blue-600  font-light tracking-widest">
+            <span className="hover:text-blue-600 font-light tracking-widest">
               Home
             </span>
           </Navbar.Link>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Label, TextInput } from "flowbite-react";
+import { Label, TextInput, Button } from "flowbite-react";
 
 function Contact() {
   return (
@@ -23,6 +23,11 @@ function Contact() {
           <Label htmlFor="large" value="Message" />
         </div>
         <TextInput id="large" sizing="lg" type="text" />
+        <div className="flex justify-center">
+          <Button className="bg-blue-300 hover:bg-blue-400 mt-4" pill>
+            <p>Submit</p>
+          </Button>
+        </div>
       </div>
     </div>
   );

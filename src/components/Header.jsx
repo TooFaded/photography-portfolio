@@ -3,8 +3,19 @@
 import { Navbar } from "flowbite-react";
 import { Link } from "react-router-dom";
 import crownLogo from "../assets/icons8-crown-64.png";
+import { useState } from "react";
 
 function Header() {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <header className="sticky top-0 z-10">
       <Navbar className="bg-blue-300 shadow-lg border-b-2" fluid>
@@ -17,13 +28,14 @@ function Header() {
           </span>
           <img src={crownLogo} alt="Crown Icon" className="w-8 sm:w-14 mb-6" />
         </Navbar.Brand>
-        <Navbar.Toggle />
+        <Navbar.Toggle onClick={toggleMobileMenu} />
 
-        <Navbar.Collapse>
+        <Navbar.Collapse className={isMobileMenuOpen ? "block" : "hidden"}>
           <Navbar.Link
             className="text-white hover:bg-gray-400 text-lg"
             as={Link}
             to="/"
+            onClick={closeMobileMenu}
           >
             <span className="hover:text-blue-600 font-light tracking-widest">
               Home
@@ -33,6 +45,7 @@ function Header() {
             className="text-white hover:bg-gray-400 text-lg"
             as={Link}
             to="/about"
+            onClick={closeMobileMenu}
           >
             <span className="hover:text-blue-600 font-light tracking-widest">
               About
@@ -43,6 +56,7 @@ function Header() {
             className="text-white hover:bg-gray-400 text-lg"
             as={Link}
             to="/contact"
+            onClick={closeMobileMenu}
           >
             <span className="hover:text-blue-600 font-light tracking-widest">
               Contact

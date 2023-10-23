@@ -11,7 +11,7 @@ export default function DefaultStickyBanner() {
         <div className="flex items-center mx-auto">
           <p className="flex items-center text-sm font-normal text-white dark:text-gray-400">
             <MdAnnouncement />
-            <span>Try clicking a photo!</span>
+            <span>Try clicking a photo and turn sound on!</span>
           </p>
         </div>
         <Banner.CollapseButton

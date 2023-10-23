@@ -71,7 +71,7 @@ function PhotoGallery() {
       </div>
 
       {selectedPhoto && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75">
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75 overflow-scroll">
           <div className="bg-white p-4 max-w-3xl">
             <img
               src={selectedPhoto.src}

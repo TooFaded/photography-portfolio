@@ -4,6 +4,7 @@ import { Navbar } from "flowbite-react";
 import { Link } from "react-router-dom";
 import crownLogo from "../assets/icons8-crown-64.png";
 import { useState } from "react";
+import DefaultStickyBanner from "./Banner";
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -64,6 +65,7 @@ function Header() {
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
+      <DefaultStickyBanner />
     </header>
   );
 }

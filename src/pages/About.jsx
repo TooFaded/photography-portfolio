@@ -14,7 +14,7 @@ function About() {
   }, []);
 
   return (
-    <div className="container h-full sm:h-screen  mx-auto p-6 mt-8">
+    <div className="container min-h-screen  mx-auto p-6 mt-8">
       <h1 className="text-3xl mb-4 font-light text-center sm:text-left">
         Reyna Nunez
       </h1>

@@ -10,6 +10,7 @@ import TrailImg3 from "../assets/trail-3.jpeg";
 import DayFloImg1 from "../assets/day-flower1.jpeg";
 import DayFloImg2 from "../assets/day-flower2.jpeg";
 import DayFloImg3 from "../assets/day-flower3.jpeg";
+
 import MyAudioPlayer from "./AudioPlayer";
 import SmoothSong from "../assets/Smooth_By_Russ.mp3";
 import FraudSong from "../assets/Fraud_By_Russ.mp3";

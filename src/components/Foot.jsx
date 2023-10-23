@@ -7,7 +7,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 function Foot() {
   return (
     <footer>
-      <Footer className="bg-blue-300 shadow-lg sticky bottom-0" container>
+      <Footer className="bg-blue-300 shadow-lg" container>
         <Footer.LinkGroup className="flex space-x-2 sm:space-x-0">
           <Footer.Link
             className="text-white"

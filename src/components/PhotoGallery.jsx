@@ -64,7 +64,7 @@ function PhotoGallery() {
             key={index}
             src={photo.src}
             alt={photo.alt}
-            className="hover:opacity-60 cursor-pointer"
+            className="hover:opacity-60 cursor-pointer border-2 border-white"
             onClick={() => openModal(photo)}
           />
         ))}

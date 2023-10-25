@@ -29,7 +29,7 @@ function About() {
           <img
             src={ReynaAboutPhoto}
             alt="Reyna Nunez"
-            className="w-[75%] rounded-xl"
+            className="w-[75%] rounded-xl border-8 border-blue-400"
           />
         </div>
         <div
